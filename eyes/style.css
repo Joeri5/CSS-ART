@@ -23,11 +23,11 @@ body {
     width: 80px;
     height: 80px;
     background: #30D733;
-    background: linear-gradient(#125C13, 70%, #1a871c);
+    background: linear-gradient(blue, 70%, lightblue);
     border-radius: 50%;
     position: absolute;
-    top: 40%;
-    left: 10%;
+    top: 25%;
+    left: 35%;
 }
 
 .pupil {
