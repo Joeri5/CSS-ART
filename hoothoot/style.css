@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hoothoot {
+    position: relative;
+}
+
+.hoothoot:hover > .hoothoot_eye > .hoothoot_shut {
+    transform: scaleY(0);
+}
+
+.hoothoot_body {
+    height: 400px;
+    width: 400px;
+    background: #884840;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.hoothoot_belly {
+    width: 110%;
+    height: 100%;
+    background: #D2AE9F;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(1px);
+}
+
+.hoothoot_eye {
+    height: 170px;
+    width: 170px;
+    background: #A13333;
+    position: absolute;
+    border-radius: 50%;
+    top: 12%;
+    border: 20px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hoothoot_eye--left {
+    left: 9%;
+}
+
+.hoothoot_eye--right {
+    right: 9%;
+}
+
+.hoothoot_pupil {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+}
+
+.hoothoot_shut {
+    width: 100%;
+    height: 100%;
+    background: #884840;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    transform: scaleY(1);
+    transition: 0.4s all;
+    transform-origin: top center;
+    border-bottom: 3px solid black;
+}
+
+.hoothoot_eyelid {
+    height: 50px;
+    position: absolute;
+    background: black;
+    width: 30px;}
+
+.hoothoot_eyelid--first {
+    transform: rotate(50deg);
+    top: 40%;
+    left: 10%;
+}
+
+.hoothoot_eyelid--second {
+    height: 55px;
+    left: 19%;
+    top: 48%;
+    transform: rotate(20deg);
+}
+
+.hoothoot_eyelid--third {
+    left: 33%;
+    top: 45%;
+    transform: rotate(-20deg);
+}
+
+.hoothoot_eyelid--fourth {
+    right: 33%;
+    top: 45%;
+    transform: rotate(20deg);
+}
+
+.hoothoot_eyelid--fifth {
+    right: 19%;
+    top: 48%;
+    height: 55px;
+    transform: rotate(-20deg);
+}
+
+.hoothoot_eyelid--sixth {
+    top: 40%;
+    right: 10%;
+    transform: rotate(-50deg);
+}
+
+.hoothoot_beak {
+    width: 55px;
+    height: 90px;
+    background: linear-gradient(#F779A0, 50%, #F5598A);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    z-index: 2;
+    transform: translateX(-50%);
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.hoothoot_mouth {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    transform: rotate(-45deg);
+}
+
+.hoothoot_eyebrow {
+    width: 25px;
+    height: 190px;
+    background: black;
+    position: absolute;
+    top: -11%;
+}
+
+.hoothoot_eyebrow--left {
+    transform: rotate(-50deg);
+    left: 35%;
+}
+
+.hoothoot_eyebrow--right {
+    transform: rotate(50deg);
+    right: 35%;
+}
+
+.hoothoot_pointer {
+    width: 110px;
+    height: 160px;
+    background: black;
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 80%, 60% 100%, 40% 100%, 0% 80%);
+    top: -33%;
+    
+}
+
+.hoothoot_pointer--left {
+    left: -7%;
+    transform: rotate(-50deg);
+}
+
+.hoothoot_pointer--right {
+    right: -7%;
+    transform: rotate(50deg);
+}
